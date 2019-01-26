@@ -3,7 +3,6 @@ const router = express.Router();
 const { APOD } = require('./apiRoutes.js');
 const axios = require('axios');
 require('dotenv').config();
-// 'https://api.nasa.gov/planetary/apod?api_key=FsgKdkwyiqWDUyF2ftElb3e2uCNOqZ7p0xGNdD5w'
 
 router.get('/api/apod', async (req, res) => {
   try {
