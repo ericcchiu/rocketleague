@@ -19,7 +19,7 @@ router.get('/api/apod', async (req, res) => {
     let entry = await axios(options);
     res.status(200).json(entry.data);
   } catch (err) {
-    res.status(200).send('Error retrieving data from NASA API');
+    res.status(404).send('Error retrieving data from NASA API');
   }
 });
 
