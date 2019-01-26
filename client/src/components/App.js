@@ -17,7 +17,7 @@ class App extends Component {
         })
       })
       .catch(err => {
-        console.log('Internal Error: Unable to retrieve APOD data')
+        console.log('Internal Error: Unable to retrieve APOD data', err)
       });
   }
   render() {
@@ -25,7 +25,7 @@ class App extends Component {
       <div>
         <h1>Welcome to React</h1>
         <div condition={this.state.weather}>Testing</div>
-        <AstronomyCard apodData={this.state.apodData}/>
+        <AstronomyCard apodData={this.state.apodData} />
       </div>
     );
   }
