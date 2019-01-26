@@ -3,3 +3,6 @@ node_modules/
 
 # bundle file from webpack
 bundle.js
+
+# Environment variables
+*.env
