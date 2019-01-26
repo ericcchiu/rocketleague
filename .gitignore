@@ -1,0 +1,5 @@
+# node module files 
+node_modules/
+
+# bundle file from webpack
+bundle.js

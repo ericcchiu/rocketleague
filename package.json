@@ -1,0 +1,46 @@
+{
+  "name": "rocketleague",
+  "version": "1.0.0",
+  "description": "Single page application that tells you whether you can see the stars in the next few days. ",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -d --watch",
+    "start": "nodemon server/index.js",
+    "restart": "pm2 startOrRestart ecosystem.config.js",
+    "deploy": "pm2 deploy ecosystem.config.js production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericcchiu/rocketleague.git"
+  },
+  "author": "Eric Chiu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericcchiu/rocketleague/issues"
+  },
+  "homepage": "https://github.com/ericcchiu/rocketleague#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "pm2": "^3.2.9",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "knex": "^0.16.3",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.9",
+    "path": "^0.12.7",
+    "pg": "^7.8.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
