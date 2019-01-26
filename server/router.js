@@ -4,6 +4,11 @@ const { APOD } = require('./apiRoutes.js');
 const axios = require('axios');
 require('dotenv').config();
 
+
+router.get('/', (req, res) => {
+  res.send('Welcome');
+});
+
 router.get('/api/apod', async (req, res) => {
   try {
     const options = {
@@ -17,8 +22,5 @@ router.get('/api/apod', async (req, res) => {
     res.status(200).send('Error retrieving data from NASA API');
   }
 });
-
-// router.post('/', express.json(), (req, res) => {
-// });
 
 module.exports = router;
