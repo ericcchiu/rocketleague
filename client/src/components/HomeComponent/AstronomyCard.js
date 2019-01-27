@@ -4,7 +4,7 @@ const AstronomyCard = (props) => {
   return (
     <div className='AstronomyCard'>
       <div className='AC_Date'>{props.apodData.date}</div>
-      <img src={props.apodData.url}/>
+      <img src={props.apodData.url} />
       <div className='AC_Explanation'>{props.apodData.explanation}</div>
     </div>
   );

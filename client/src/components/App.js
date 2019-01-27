@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import AstronomyCard from './AstronomyCard.js';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Header from './NavigationComponent/Header';
-import Home from './Home';
+import Home from './HomeComponent/Home';
 
 class App extends Component {
   state = {
@@ -35,7 +34,10 @@ class App extends Component {
             exact path='/'
             render={(props) => <Home {...props} apodData={this.state.apodData} />}
           />
-
+          {/* <Route
+            exact path='/Epic'
+            render={(props) ==> <EPIC {...props} epicData={this.state.epicData} />}
+          /> */}
         </div>
       </Router>
     );

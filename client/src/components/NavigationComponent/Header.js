@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
+import './Header.css';
 
 
 const Header = () => {
@@ -13,8 +14,8 @@ const Header = () => {
         <li>
           <Link to="EPIC">EPIC</Link>
         </li>
+        <li><SearchBar /></li>
       </ul>
-      <SearchBar />
     </div>
   );
 };
