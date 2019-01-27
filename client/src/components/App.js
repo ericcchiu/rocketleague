@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import AstronomyCard from './AstronomyCard.js';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Header from './NavigationComponent/Header';
+import Home from './Home';
 
 class App extends Component {
   state = {
     weather: 'sunny',
-    apodData: ''
+    apodData: '',
+    epicData: ''
   }
 
   componentDidMount() {
@@ -22,11 +26,18 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
-        <h1>Welcome to React</h1>
-        <div condition={this.state.weather}>Testing</div>
-        <AstronomyCard apodData={this.state.apodData} />
-      </div>
+      <Router>
+        <div className='App'>
+          <Header />
+          {/* <div conditison={this.state.weather}>Testing</div> */}
+          {/* <AstronomyCard apodData={this.state.apodData} /> */}
+          <Route
+            exact path='/'
+            render={(props) => <Home {...props} apodData={this.state.apodData} />}
+          />
+
+        </div>
+      </Router>
     );
   }
 }
