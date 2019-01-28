@@ -15,7 +15,7 @@ class SearchBar extends Component {
     return (
       <form>
         <input
-          placeholder="Search for..."
+          placeholder="Search for the skies"
           ref={input => this.search = input}
           onChange={this.handleInputChange}
         />

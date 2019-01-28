@@ -6,15 +6,16 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <div>
+    <div className="NavBar">
       <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="EPIC">EPIC</Link>
+          <Link to="/EPIC">EPIC</Link>
         </li>
-        <li><SearchBar /></li>
+        <div className="SearchBar"><SearchBar /></div>
+
       </ul>
     </div>
   );
