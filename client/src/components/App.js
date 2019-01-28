@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import Header from './NavigationComponent/Header';
 import Home from './HomeComponent/Home';
 import Epic from './EpicComponent/Epic';
+import './App.css';
 
 class App extends Component {
   state = {

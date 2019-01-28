@@ -1,11 +1,15 @@
 import React from 'react';
+import './AstronomyCard.css';
 
 const AstronomyCard = (props) => {
   return (
-    <div className='AstronomyCard'>
-      <div className='AC_Date'>{props.apodData.date}</div>
+    <div className='astronomycardbox'>
+      <div className='astronomyDate'>{props.apodData.date}</div>
       <img src={props.apodData.url} />
-      <div className='AC_Explanation'>{props.apodData.explanation}</div>
+      <p>Hello</p>
+      <div id="descriptionbox">
+        <p id="description">{props.apodData.explanation}</p>
+      </div>
     </div>
   );
 };

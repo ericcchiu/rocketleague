@@ -39,8 +39,10 @@
     "css-loader": "^2.1.0",
     "dotenv": "^6.2.0",
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "file-loader": "^3.0.1",
     "pm2": "^3.2.9",
     "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1"
   },

@@ -1,0 +1,8 @@
+input {
+  display: block;
+  float: right;
+  border-radius: 2px;
+}
+form {
+  padding: 14px 16px;
+}
