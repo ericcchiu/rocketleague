@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './searchicon.png';
 class SearchBar extends Component {
   state = {
     query: '',
@@ -12,6 +12,7 @@ class SearchBar extends Component {
   }
   componentDidMount() {
     // GET request here
+
   }
 
   render() {

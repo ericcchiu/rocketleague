@@ -2,6 +2,13 @@ input {
   display: block;
   float: right;
   border-radius: 2px;
+  color: black;
+  background: url('./searchicon.png') no-repeat scroll;
+  background-color: lightgray;
+  padding-left:50px;
+}
+input.placeholder {
+  float: right;
 }
 form {
   padding: 14px 16px;
