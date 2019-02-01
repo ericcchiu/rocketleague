@@ -4,7 +4,7 @@ import AstronomyCard from './AstronomyCard';
 
 const Home = (props) => {
   return (
-    <div>
+    <div className='HomeBox'>
       <AstronomyCard apodData={props.apodData} />
     </div>
   );

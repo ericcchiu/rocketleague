@@ -14,8 +14,7 @@ class Epic extends Component {
   render() {
     console.log(this.state.epicListData)
     return (
-      <div>
-        <h1>Welcome to EPIC component</h1>
+      <div className='EpicBox'>
         <EpicView />
         <EpicList />
       </div>
