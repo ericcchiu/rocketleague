@@ -1,0 +1,13 @@
+.MarsWeatherContainer {
+  display: flex; 
+  flex-direction: column; 
+}
+
+.MarsWeatherBox {
+  color: white; 
+  background-color: rgb(109,123,131, 0.8);
+  border-radius: 8px;
+  width: 22%;
+  height: 25%;
+  margin: 15px;
+}

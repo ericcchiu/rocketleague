@@ -8,12 +8,17 @@
   align-items: center;
   border-radius: 8px;
   background-color: rgb(109,123,131, 0.8);
-  width: 50%;
-  margin: 25px;
+  width: 45%;
+  height: 20%;
+  margin: 15px;
+}
+.img-item {
+  display:flex;
+  justify-content: center;
 }
 img {
-  width: 500px;
-  height: 400px;
+  width: 80%;
+  height: 100%;
   border-radius: 4px;
 }
 
@@ -23,8 +28,10 @@ p#description {
 
 .date-item {
   color: white;
+  margin: 20px;
 }
 
 .description-item {
   width: 80%;
+  height: 100%;
 }
